@@ -1,13 +1,11 @@
-import { useState } from 'react'
 import './App.css'
 import { Home } from './pages/Home/Home'
 import { Navbar } from './components/organisms/Navbar/Navbar'
-import { Routes } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import { Discover } from './pages/Discover/Discover'
+import { Join } from './pages/Join/Join'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
       <Navbar />
