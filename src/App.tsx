@@ -9,11 +9,11 @@ function App() {
   return (
     <>
       <Navbar />
-      <Routes>
+      {/* <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/discover' element={<Discover />} />
         <Route path='/join' element={<Join />} />
-      </Routes>
+      </Routes> */}
     </>
   )
 }
