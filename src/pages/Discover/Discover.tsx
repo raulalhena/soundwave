@@ -1,7 +1,5 @@
 import React from 'react'
 import { Footer } from '../../components/organisms/Footer/Footer'
-import { footerTheme } from '../../components/templates/FooterTheme'
-import { ThemeProvider } from '@emotion/react'
 import { Box } from '@mui/material'
 import { DiscoverContentContainer } from '../../components/organisms/DiscoverContent/DiscoverContentContainer'
 import { DiscoverSectionsContainer } from '../../components/particles/DiscoverSectionsContainer'

@@ -1,30 +1,8 @@
 import { styled, Paper, Box, Typography, Container } from '@mui/material'
 
 export const FooterCustom = styled(Box)(() => ({
-  // display: 'flex',
-  // justifyContent: 'space-between',
-  // gap: '20px',
   background: '#202027',
   padding: '20px 0'
-  // padding: '10px 30px'
-}))
-
-export const FooterContentContainer = styled(Container)(() => ({
-  maxHeight: '80%',
-  // border: '1px solid red',
-  width: '85%',
-  display: 'flex',
-  justifyContent: 'space-between',
-  gap: '20px',
-  background: '#202027',
-  padding: '0'
-}))
-
-export const FooterItem = styled(Box)(() => ({
-  // border: '1px solid yellow',
-  display: 'flex',
-  flexDirection: 'column',
-  alignItems: 'center',
 }))
 
 export const Footer = () => {
