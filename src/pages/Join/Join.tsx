@@ -1,6 +1,6 @@
 import React from 'react'
 import { Footer } from '../../components/organisms/Footer/Footer'
-import { Box, Container } from '@mui/material'
+import { Box, Container, Typography } from '@mui/material'
 import { JoinButton } from '../../components/atoms/JoinButton'
 import { JoinInput } from '../../components/atoms/JoinInput'
 import { JoinForm } from '../../components/particles/JoinForm'
@@ -10,25 +10,33 @@ export function Join() {
   return (
     <>
       <Container>
-        <Box>
-          Join the <span style={{ color: 'purlple'}}>fun.</span>
+        <Box sx={{ textAlign: 'left', marginBottom: '15px' }}>
+          <Typography variant='joinTitle'>
+            Join the <Typography variant='accentText'>fun.</Typography>
+          </Typography>
         </Box>
         <Box>
           <JoinForm id='signup'>
-            <JoinInputLabel html-for='name'>
-              Name:
+            <JoinInputLabel htmlFor='name'>
+              <Typography variant='inputLabel'>
+                Name:
+              </Typography>
             </JoinInputLabel>
             <JoinInput id='name' />
-            <JoinInputLabel>
-              Email:
+            <JoinInputLabel htmlFor='email'>
+              <Typography variant='inputLabel'>
+                Email:
+              </Typography>
             </JoinInputLabel>
-            <JoinInput />
+            <JoinInput id='email' />
             <JoinInputLabel>
-              Password:
+              <Typography variant='inputLabel'>
+                Password:
+              </Typography>
             </JoinInputLabel>
             <JoinInput />
             <Box sx={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
-              <JoinButton sx={{  padding: '2px 25px' }}>
+              <JoinButton sx={{  padding: '2px 25px', width: '100%', margin: '15px 0 10px 0', fontSize: '0.75rem',  }}>
                 Join Now
               </JoinButton>
             </Box>
