@@ -10,6 +10,7 @@ import { DiscoverCoversBox } from '../../components/atoms/DiscoverCoversBox'
 
 export const Discover = () => {
   return (
+    <>
       <DiscoverContentContainer>
         <Box sx={{ textAlign: 'left', fontSize: '2rem' }}>
           Discover new music
@@ -34,10 +35,9 @@ export const Discover = () => {
         <DiscoverCoversBox>
           <img src="../../assets/covers.jpg" alt="Covers" width='80%' style={{ marginRight: '20px' }} />
         </DiscoverCoversBox>
-        <ThemeProvider theme={ footerTheme }>
-          <Footer />
-        </ThemeProvider>
       </DiscoverContentContainer>
+      <Footer />
+    </>
   )
 }
 

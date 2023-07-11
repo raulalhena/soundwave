@@ -23,11 +23,19 @@ export const SoundWaveTheme = createTheme({
             lineHeight: '3.5rem'
         },
         accentText: {
+            fontFamily: ['Poppins'],
             color: '#bf3681'
         },
         inputLabel: {
+            fontFamily: ['Poppins'],
             fontSize: '0.75rem',
             fontWeight: 700
+        },
+        footerText: {
+            fontFamily: ['Poppins'],
+            fontWeight: 700,
+            fontSize: '0.85rem',
+            color: '#fff'
         }
     }
     
