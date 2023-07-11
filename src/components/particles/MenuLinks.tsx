@@ -1,8 +1,8 @@
 import { Box, styled } from "@mui/material";
 
 export const MenuLinks = styled(Box)(() => ({
-    fontSize: '25px',
+    fontSize: '15px',
     display: 'flex',
     alignItems: 'center',
-    gap: '10px',
+    gap: '15px',
 }))

@@ -1,7 +1,6 @@
 import { styled, Container } from '@mui/material'
 
 export const NavbarContainer = styled(Container) (() => ({
-    border: '1px solid blue',
     display: 'flex', 
     alignItems: 'center', 
     justifyContent: 'space-between',
