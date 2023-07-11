@@ -1,7 +1,6 @@
 import { BottomNavigation, Box, ThemeProvider, Container, BottomNavigationAction, styled, Paper } from '@mui/material'
 import React from 'react'
 import { footerTheme } from '../../templates/FooterTheme'
-// import { Twitter } from '@mui/icons'
 
 const BottomNavigationCustom = styled(BottomNavigation)(() => ({
   background: '#202027',
