@@ -1,4 +1,5 @@
 import { createTheme } from "@mui/material";
+import '@fontsource/poppins'
 
 export const SoundWaveTheme = createTheme({
     palette: {
@@ -10,9 +11,10 @@ export const SoundWaveTheme = createTheme({
         },
         text: {
             primary: '#fff',
-        },
-        typography: {
-            fontFamily: ['Poppins']
         }
+    },
+    typography: {
+        fontFamily: ['Poppins']
     }
+    
 })

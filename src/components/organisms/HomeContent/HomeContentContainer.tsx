@@ -3,7 +3,7 @@ import { Container, styled } from "@mui/material"
 export const HomeContentContainer = styled(Container)(() => ({
     border: '1px solid red',
     display: 'flex',
-    gap: '15px',
+    gap: '10px',
     flexDirection: 'column',
-    padding: '0'
+    padding: '0',
   }))
