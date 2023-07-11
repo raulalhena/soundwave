@@ -1,7 +1,22 @@
+import { BottomNavigation, Box, ThemeProvider, Container, BottomNavigationAction, styled, Paper } from '@mui/material'
 import React from 'react'
+import { footerTheme } from '../../templates/FooterTheme'
+// import { Twitter } from '@mui/icons'
+
+const BottomNavigationCustom = styled(BottomNavigation)(() => ({
+  background: '#202027',
+  color: '#fff'
+}))
 
 export const Footer = () => {
   return (
-    <div>Footer</div>
+    <Paper sx={{ position: 'fixed', bottom: 0, left: 0, right: 0 }}>
+    <BottomNavigationCustom>
+        <BottomNavigationAction sx={{ color: '#fff' }} label='About Us' icon={'About Us'}/>
+        <BottomNavigationAction sx={{ color: '#fff' }} label='Contact' icon={'Contact'}/>
+        <BottomNavigationAction sx={{ color: '#fff' }} label='Twitter' icon={'Twitter'}/>
+        <BottomNavigationAction sx={{ color: '#fff' }} label='Facebook' icon={'Facebook'}/>
+    </BottomNavigationCustom>
+   </Paper>
   )
 }

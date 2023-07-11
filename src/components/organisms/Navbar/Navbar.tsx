@@ -1,45 +1,23 @@
-import { Toolbar, AppBar, Container, Typography, Box } from '@mui/material'
+import { Toolbar, AppBar, Container, Box } from '@mui/material'
 import { styled } from '@mui/material'
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { makeStykes } from '@mui/material/core'
+import { LogoTypography } from '../../particles/LogoTypography'
+import { MenuLinks } from '../../particles/MenuLinks'
+import { NavbarContainer } from '../../particles/NavbarContainer'
+import { ToolbarCustom } from '../../particles/ToolbarCustom'
+import { MenuLink } from '../../atoms/MenuLink'
 
-
-const AppBarSx = {
+const AppBarCustom = styled(AppBar)(() => ({
     border: '1px solid purple',
-    bgcolor: 'white',
-    display: 'flex'
-}
-
-const containerSx = {
-    display: 'flex', 
-    alignItems: 'center', 
-    justifyContent: 'space-between', 
-    padding: '0px',
-    width: '100%'
-}
-
-const MenuLinks = styled(Box)(() => ({
-    fontSize: '25px',
     display: 'flex',
-    gap: '10px'
 }))
-
-const LogoTypography = styled(Typography)(() => ({
-    display: 'inline-flex',
-    gap: '10px',
-    fontSize:'30px',
-    border: '1px solid orange', 
-    alignItems: 'center', 
-    width: '100%' 
-}))
-
 
 export const Navbar = () => {
   return (
-        <AppBar  component='nav' sx={AppBarSx}>
-            <Container sx={containerSx}>
-                <Toolbar sx={{ border: '1px solid blue', width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '0px'}}>
+        <AppBarCustom component='nav'>
+            <NavbarContainer>
+                <ToolbarCustom>
                     <Box>
                         <Link to='/'>
                             <LogoTypography variant='h5'>
@@ -48,15 +26,15 @@ export const Navbar = () => {
                         </Link>
                     </Box>
                     <MenuLinks>
-                        <Link to='/discover'>
+                        <MenuLink to='/discover' >
                             Discover
-                        </Link>
-                        <Link to='/join'>
+                        </MenuLink>
+                        <MenuLink to='/join'>
                             Join
-                        </Link>
+                        </MenuLink>
                     </MenuLinks>
-                </Toolbar>
-            </Container>
-        </AppBar>
+                </ToolbarCustom>
+            </NavbarContainer>
+        </AppBarCustom>
     )
 }

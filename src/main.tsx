@@ -4,14 +4,18 @@ import App from './App.tsx'
 import './index.css'
 import { BrowserRouter } from 'react-router-dom'
 import CssBaseline from '@mui/material/CssBaseline';
+import { ThemeProvider } from '@emotion/react'
+import { SoundWaveTheme } from './components/templates/SoundWaveTheme.tsx'
 
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     <BrowserRouter>
-    <CssBaseline>
-      <App />
-    </CssBaseline>
+     <ThemeProvider theme={ SoundWaveTheme }>
+      <CssBaseline>
+        <App />
+      </CssBaseline>
+      </ThemeProvider>
     </BrowserRouter>
   </React.StrictMode>,
 )
