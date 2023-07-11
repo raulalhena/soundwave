@@ -1,6 +1,6 @@
-import { Box, Button, Container, styled } from '@mui/material'
-import React from 'react'
+import { Box } from '@mui/material'
 import { HomeContentContainer } from '../../components/organisms/HomeContent/HomeContentContainer'
+import { JoinButton } from '../../components/atoms/JoinButton'
 
 export const Home = () => {
   return (
@@ -12,7 +12,7 @@ export const Home = () => {
         Stream over 20 thousand songs with one click
       </Box>
       <Box sx={{ width: '35%' }}>
-        <Button size='md' sx={{ bgcolor: '#1762A7', color: '#fff' }}>Join Now</Button>
+        <JoinButton size='md'>Join Now</JoinButton>
       </Box>
     </HomeContentContainer>
   )
