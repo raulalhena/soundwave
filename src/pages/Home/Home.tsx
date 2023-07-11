@@ -1,6 +1,6 @@
 import { Box, Button, Container, styled } from '@mui/material'
 import React from 'react'
-import { HomeContentContainer } from '../../components/particles/HomeContentContainer'
+import { HomeContentContainer } from '../../components/organisms/HomeContent/HomeContentContainer'
 
 export const Home = () => {
   return (
