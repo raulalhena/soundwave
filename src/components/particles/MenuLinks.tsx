@@ -5,4 +5,6 @@ export const MenuLinks = styled(Box)(() => ({
     display: 'flex',
     alignItems: 'center',
     gap: '15px',
+    padding: '7px 0',
+    marginTop: '-5px'
 }))
