@@ -11,7 +11,7 @@ export const Home = () => {
       <Box sx={{ textAlign: 'left', width: '100%' }}>
         Stream over 20 thousand songs with one click
       </Box>
-      <Box sx={{ width: '35%', textAlign: 'left', }}>
+      <Box sx={{ width: '35%', textAlign: 'left', marginTop: '10px' }}>
         <JoinButton size='md' sx={{ fontSize: '0.75rem', padding: '5px 15px' }}>Join Now</JoinButton>
       </Box>
     </HomeContentContainer>
