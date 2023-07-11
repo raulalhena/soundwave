@@ -1,6 +1,6 @@
 import React from 'react'
 import { Footer } from '../../components/organisms/Footer/Footer'
-import { Box, Container, InputLabel, styled, Input } from '@mui/material'
+import { Box, Container } from '@mui/material'
 import { JoinButton } from '../../components/atoms/JoinButton'
 import { JoinInput } from '../../components/atoms/JoinInput'
 import { JoinForm } from '../../components/particles/JoinForm'

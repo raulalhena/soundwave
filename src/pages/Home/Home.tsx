@@ -12,7 +12,7 @@ export const Home = () => {
         Stream over 20 thousand songs with one click
       </Box>
       <Box sx={{ width: '35%', textAlign: 'left', }}>
-        <JoinButton size='md' sx={{ fontSize: '0.75rem', textTransform: 'none', padding: '5px 15px' }}>Join Now</JoinButton>
+        <JoinButton size='md' sx={{ fontSize: '0.75rem', padding: '5px 15px' }}>Join Now</JoinButton>
       </Box>
     </HomeContentContainer>
   )
