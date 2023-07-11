@@ -1,4 +1,6 @@
-import { styled, Paper, Box, Typography, Container } from '@mui/material'
+import { styled, Paper, Box, Typography } from '@mui/material'
+import { FooterContentContainer } from '../../particles/FooterContentContainer'
+import { FooterItem } from '../../atoms/FooterItem'
 
 export const FooterCustom = styled(Box)(() => ({
   background: '#202027',
