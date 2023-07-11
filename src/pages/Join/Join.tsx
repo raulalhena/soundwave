@@ -28,7 +28,7 @@ export function Join() {
             </JoinInputLabel>
             <JoinInput />
             <Box sx={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
-              <JoinButton>
+              <JoinButton sx={{  padding: '2px 25px' }}>
                 Join Now
               </JoinButton>
             </Box>

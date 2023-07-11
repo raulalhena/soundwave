@@ -9,7 +9,10 @@ export const SoundWaveTheme = createTheme({
             default: '#2F303A'
         },
         text: {
-            primary: '#fff'
+            primary: '#fff',
+        },
+        typography: {
+            fontFamily: ['Poppins']
         }
     }
 })
