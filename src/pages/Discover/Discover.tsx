@@ -11,8 +11,8 @@ import { DiscoverCoversBox } from '../../components/atoms/DiscoverCoversBox'
 export const Discover = () => {
   return (
       <DiscoverContentContainer>
-        <Box sx={{ textAlign: 'left' }}>
-          Discover New Music
+        <Box sx={{ textAlign: 'left', fontSize: '2rem' }}>
+          Discover new music
         </Box>
         <DiscoverSectionsContainer>
           <DiscoverSectionsBox>
@@ -28,11 +28,11 @@ export const Discover = () => {
             More
           </DiscoverSectionsBox>
         </DiscoverSectionsContainer>
-        <Box sx={{ textAlign: 'left' }}>
+        <Box sx={{ textAlign: 'left', fontSize: '0.75rem', width: '90%' }}>
           By joining you can benefit by listening to the latest albums released.
         </Box>
         <DiscoverCoversBox>
-          <img src="../../assets/covers.jpg" alt="Covers" width='80%' style={{ border: '1px solid yellow',  marginRight: '20px' }} />
+          <img src="../../assets/covers.jpg" alt="Covers" width='80%' style={{ marginRight: '20px' }} />
         </DiscoverCoversBox>
         <ThemeProvider theme={ footerTheme }>
           <Footer />

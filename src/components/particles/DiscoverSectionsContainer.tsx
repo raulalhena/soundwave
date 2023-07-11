@@ -5,6 +5,5 @@ export const DiscoverSectionsContainer = styled(Container)(() => ({
     flexDirection: 'row',
     justifyContent: 'start',
     gap: '15px',
-    border: '1px solid red',
     padding: '0'
   }))

@@ -6,7 +6,6 @@ export const DiscoverSectionsBox = styled(Box)(() => ({
     flexDirection: 'column',
     alignItems: 'center', 
     justifyContent: 'center',
-    border: '1px solid white',
     padding: '10px',
     backgroundColor: '#202027',
     marginLeft: '0'
