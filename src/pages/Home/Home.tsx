@@ -15,6 +15,5 @@ export const Home = () => {
         <Button size='md' sx={{ bgcolor: '#1762A7', color: '#fff' }}>Join Now</Button>
       </Box>
     </HomeContentContainer>
-
   )
 }
