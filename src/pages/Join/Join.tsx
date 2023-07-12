@@ -6,11 +6,16 @@ import { JoinInput } from '../../components/atoms/JoinInput'
 import { JoinForm } from '../../components/particles/JoinForm'
 import { JoinInputLabel } from '../../components/atoms/JoinInputLabel'
 import { Main } from '../../components/organisms/Main/Main'
+import { JoinContentContainer } from '../../components/organisms/JoinContent/JoinContentContainer'
+import { JoinInfoContainer } from '../../components/particles/JoinInfoContainer'
+import { Circle } from '../../components/atoms/Circle'
 
 export function Join() {
   return (
     <>
       <Main>
+        <Circle sx={{  position: 'absolute', top: '-20%', left: '20%', zIndex: '-2', width: '400px', height: '400px', bgcolor: '#3457b2' }} />
+        <Circle sx={{  position: 'absolute', top: '20%', left: '-10%', zIndex: '-2', width: '550px', height: '550px', bgcolor: '#bc3a80' }} />
         <JoinContentContainer>
           <JoinInfoContainer>
             <Typography variant='joinTitle'>
