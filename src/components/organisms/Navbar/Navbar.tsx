@@ -9,7 +9,10 @@ import { ToolbarCustom } from '../../particles/ToolbarCustom'
 import { MenuLink } from '../../atoms/MenuLink'
 
 const AppBarCustom = styled(AppBar)(() => ({
-    display: 'flex'
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center'
 }))
 
 export const Navbar = () => {

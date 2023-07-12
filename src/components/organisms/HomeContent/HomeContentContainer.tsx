@@ -1,8 +1,13 @@
-import { Container, styled } from "@mui/material"
+import { Box, styled } from "@mui/material"
+import { SoundWaveTheme } from "../../templates/SoundWaveTheme"
 
-export const HomeContentContainer = styled(Container)(() => ({
+export const HomeContentContainer = styled(Box)(() => ({
     display: 'flex',
-    gap: '10px',
-    flexDirection: 'column',
-    padding: '0',
-  }))
+    flexDirection: 'row',
+    justifyContent: 'center',
+    [SoundWaveTheme.breakpoints.up('desktop')]: {
+      width: '1080px',
+      alignItems: 'flex-end',
+      gap: '3%',
+    }
+}))

@@ -9,7 +9,7 @@ export const FooterCustom = styled(Box)(() => ({
 
 export const Footer = () => {
   return (
-    <Paper sx={{ position: 'fixed', bottom: 0, left: 0, right: 0 }}>
+    <Paper sx={{ position: 'fixed', bottom: 0, left: 0, right: 0 }} component='footer'>
       <FooterCustom>
         <FooterContentContainer>
           <FooterItem>

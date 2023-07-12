@@ -5,5 +5,6 @@ export const MenuLink = styled(Link)(() => ({
     color: '#fff',
     '&:hover': {
         color: '#adadad'
-    }
+    },
+    textDecoration: 'none'
 }))
