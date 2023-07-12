@@ -1,6 +1,5 @@
-import React from 'react'
 import { Footer } from '../../components/organisms/Footer/Footer'
-import { Box, styled } from '@mui/material'
+import { Box } from '@mui/material'
 import { DiscoverContentContainer } from '../../components/organisms/DiscoverContent/DiscoverContentContainer'
 import { DiscoverSectionsContainer } from '../../components/particles/DiscoverSectionsContainer'
 import { DiscoverSectionsBox } from '../../components/particles/DiscoverSectionsBox'
