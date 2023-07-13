@@ -15,7 +15,7 @@ export const Home = () => {
       <Circle sx={{  position: 'absolute', top: '40%', left: '70%', zIndex: '-2', width: '800px', height: '800px', bgcolor: '#3457b2' }} />
       <HomeContentContainer>
         <HeroGirlImage component='section'>
-          <img src="/src/assets/landing-page-girl.png" alt="Hero Girl" style={{ maxHeight: '100%', maxWidth: '100%' }}/>
+          <img src="assets/landing-page-girl.png" alt="Hero Girl" style={{ maxHeight: '100%', maxWidth: '100%' }}/>
         </HeroGirlImage>
         <HomeInfoContainer component='section'>
           <Box sx={{ textAlign: 'left', width: '80%', [SoundWaveTheme.breakpoints.up('desktop')]: { width: '100%'} }}>
