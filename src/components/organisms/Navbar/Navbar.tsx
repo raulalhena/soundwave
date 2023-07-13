@@ -22,7 +22,7 @@ export const Navbar = () => {
                     <Box>
                         <Link to='/'>
                             <LogoTypography variant='h5'>
-                                <img src="../../../assets/logo.png" alt="Soundwave" style={{ maxWidth: '20%' }}/>Soundwave
+                                <img src="/src/assets/logo.png" alt="Soundwave" style={{ maxWidth: '20%' }}/>Soundwave
                             </LogoTypography>
                         </Link>
                     </Box>
