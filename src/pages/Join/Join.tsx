@@ -1,4 +1,3 @@
-import React from 'react'
 import { Footer } from '../../components/organisms/Footer/Footer'
 import { Box, Typography } from '@mui/material'
 import { JoinButton } from '../../components/atoms/JoinButton'
