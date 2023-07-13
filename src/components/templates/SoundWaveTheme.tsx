@@ -2,8 +2,10 @@ import { createTheme } from "@mui/material";
 import '@fontsource/poppins'
 import '@fontsource/poppins/700.css'
 import '@fontsource/poppins/500.css'
+import '@mui/material/Typography'
+// import React from 'react'
 
-declare module '@mui/core/styles/createBreakpoints' {
+declare module '@mui/system/createTheme/createBreakpoints' {
     interface BreakpointOverrides {
         xs: false;
         sm: false;
@@ -12,6 +14,16 @@ declare module '@mui/core/styles/createBreakpoints' {
         xl: false;
         mobile: true;
         desktop: true;
+    }
+}
+
+declare module "@mui/material/Typography" {
+    interface TypographyPropsVariantOverrides {
+        heroText: true;
+        footerText: true;
+        joinTitle: true;
+        inputLabel: true;
+        accentText: true;
     }
 }
 
@@ -27,8 +39,8 @@ export const SoundWaveTheme = createTheme({
             primary: '#fff',
         }
     },
-    typography: {
-        fontFamily: ['Poppins'],
+    typography: () => ({
+        fontFamily: 'Poppins',
         heroText: {
             fontSize: '2rem',
             fontWeight: 500
@@ -53,7 +65,7 @@ export const SoundWaveTheme = createTheme({
             fontSize: '0.85rem',
             color: '#fff'
         }
-    },
+    }),
     breakpoints: {
         values: {
             mobile: 0,

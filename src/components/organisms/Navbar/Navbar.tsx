@@ -16,7 +16,7 @@ const AppBarCustom = styled(AppBar)(() => ({
 
 export const Navbar = () => {
   return (
-        <AppBarCustom component='nav' elevation={0} sx={{ bgcolor: 'rgba(0, 0, 0, 0)' }}>
+        <AppBarCustom elevation={0} sx={{ bgcolor: 'rgba(0, 0, 0, 0)' }}>
             <NavbarContainer>
                 <ToolbarCustom>
                     <Box>
